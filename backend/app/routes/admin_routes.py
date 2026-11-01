@@ -3,6 +3,7 @@ from http.client import HTTPException
 from fastapi import APIRouter, Request, Form
 from fastapi.responses import RedirectResponse, HTMLResponse
 from fastapi.templating import Jinja2Templates
+from fastapi import HTTPException
 from app.database import run_query, get_conn
 from app.auth import get_user_from_session
 
